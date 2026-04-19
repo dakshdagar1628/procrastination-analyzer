@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  min-height: 100%;
+  background: linear-gradient(180deg, #fff8de 0%, #fff2c6 42%, #aac4f5 100%);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Manrope', Arial, sans-serif;
+  color: #24324a;
+  background:
+    radial-gradient(circle at top left, rgba(255, 248, 222, 0.95), transparent 28%),
+    radial-gradient(circle at top right, rgba(140, 169, 255, 0.28), transparent 24%),
+    radial-gradient(circle at bottom left, rgba(170, 196, 245, 0.45), transparent 30%),
+    linear-gradient(180deg, #fff8de 0%, #fff2c6 44%, #aac4f5 100%);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+@layer base {
+  * {
+    @apply box-border;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Tuskar', 'Manrope', sans-serif;
+    letter-spacing: -0.03em;
+  }
+
+  button,
+  input,
+  select,
+  textarea {
+    font: inherit;
+  }
+}
+
+@layer components {
+  .app-panel {
+    @apply rounded-[2rem] border border-white/45 bg-white/45 backdrop-blur-xl;
+    box-shadow: 0 24px 80px rgba(140, 169, 255, 0.16);
+  }
+
+  .app-panel-strong {
+    @apply rounded-[2rem] border border-white/55 bg-white/60 backdrop-blur-xl;
+    box-shadow: 0 28px 90px rgba(140, 169, 255, 0.18);
+  }
+
+  .soft-input {
+    @apply w-full rounded-2xl border border-white/60 bg-white/80 px-4 py-3.5 text-slate-900 outline-none transition duration-300 placeholder:text-slate-400;
+    box-shadow: 0 10px 30px rgba(170, 196, 245, 0.1);
+  }
+
+  .soft-input:hover {
+    @apply -translate-y-0.5;
+    box-shadow: 0 14px 34px rgba(140, 169, 255, 0.14);
+  }
+
+  .soft-input:focus {
+    @apply border-[#8CA9FF] bg-white ring-4 ring-[#AAC4F5]/30;
+  }
+
+  .soft-button {
+    @apply relative overflow-hidden rounded-2xl px-5 py-3.5 font-semibold text-slate-900 transition duration-300;
+    background: linear-gradient(135deg, #8ca9ff 0%, #aac4f5 100%);
+    box-shadow: 0 18px 35px rgba(140, 169, 255, 0.35);
+  }
+
+  .soft-button:hover {
+    @apply -translate-y-1;
+    box-shadow: 0 24px 45px rgba(140, 169, 255, 0.4);
+  }
+
+  .soft-button:active {
+    transform: scale(0.985);
+  }
+
+  .soft-button:disabled {
+    @apply cursor-not-allowed opacity-60;
+  }
+
+  .soft-badge {
+    @apply inline-flex items-center rounded-full border border-white/55 bg-white/55 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-slate-600;
+  }
+
+  .metric-card {
+    @apply rounded-[1.75rem] border p-5 backdrop-blur-xl transition duration-300 hover:-translate-y-1;
+    box-shadow: 0 18px 40px rgba(140, 169, 255, 0.14);
+  }
+
+  .metric-card:hover {
+    box-shadow: 0 24px 52px rgba(140, 169, 255, 0.2);
+  }
+}
