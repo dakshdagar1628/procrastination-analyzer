@@ -14,19 +14,19 @@
 
 ---
 
-## ✨ Features
+## ? Features
 
 | Feature | Description |
 |---|---|
-| 📝 **Manual Activity Logging** | Log websites and activities with time spent |
-| 🏷️ **Smart Classification** | Tag activities as Productive / Neutral / Procrastination |
-| 📊 **Analytics Dashboard** | Visual charts powered by Chart.js |
-| 🐳 **Docker Ready** | One-command setup with Docker Compose |
-| 🔗 **REST API** | Clean Express.js API for all operations |
+| ? **Manual Activity Logging** | Log websites and activities with time spent |
+| ?️ **Smart Classification** | Tag activities as Productive / Neutral / Procrastination |
+| ? **Analytics Dashboard** | Visual charts powered by Chart.js |
+| ? **Docker Ready** | One-command setup with Docker Compose |
+| ? **REST API** | Clean Express.js API for all operations |
 
 ---
 
-## 🏗️ Tech Stack
+## ?️ Tech Stack
 
 | Layer | Technology |
 |---|---|
@@ -37,7 +37,7 @@
 
 ---
 
-## 🚀 Quick Start
+## ? Quick Start
 
 ### With Docker (Recommended)
 ```bash
@@ -52,7 +52,6 @@ App runs at **http://localhost:5173** · API at **http://localhost:3000**
 **Backend**
 ```bash
 cd backend
-cp .env.example .env        # fill in your PostgreSQL credentials
 npm install
 npm run dev
 ```
@@ -66,7 +65,7 @@ npm run dev
 
 ---
 
-## 📡 API Reference
+## ? API Reference
 
 | Method | Endpoint | Description |
 |---|---|---|
@@ -76,7 +75,7 @@ npm run dev
 
 ---
 
-## 📂 Project Structure
+## ? Project Structure
 
 ```
 procrastination-analyzer/
